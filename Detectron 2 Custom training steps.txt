@@ -1,0 +1,24 @@
+Detectron-2 Custom Training In Google Colab
+
+--> Import Torch and and torchvision
+
+--> Install Detectron2 and restart runtime
+
+--> Check the imports are fine
+	Includes Downloading model zoo
+
+--> To convert the annatations into single json format:
+
+python labelme2coco.py images --output trainval.json
+
+--> Register the data and annotation file using RegisterCOCOinstances
+
+--> Check the annotations for some of the random images
+
+--> Start the training:
+	Includes:
+		1) Model zoo file name i.e model name and the config file of the model
+		2) Change the number of classes in the training code
+
+
+
